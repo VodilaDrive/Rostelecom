@@ -1,0 +1,36 @@
+from selenium.webdriver.common.by import By
+
+
+class AuthLocators:
+
+    AUTH_EMAIL_PHONE_NUMBER = (By.XPATH, '//[@id="username"]')
+    AUTH_LOGIN_ID = (By.ID, 'username')
+    AUTH_PASS = (By.ID, 'password')
+    AUTH_BTN = (By.XPATH, '//*[@id="kc-login"]')
+    AUTH_PASS_MASK = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[2]/a')
+    AUTH_FORGOT_PASS_LINK = (By.XPATH, '//*[@id="forgot_password"]')
+    AUTH_BTN_TIME_CODE = (By.XPATH, '//*[@id="back_to_otp_btn"]')
+    AUTH_BTN_GET_CODE = (By.XPATH, '//*[@id="otp_get_code"]')
+    AUTH_BTN_LOGIN_WITH_PASS = (By.XPATH, '//*[@id="standard_auth_btn"]')
+    AUTH_BTN_EMAIL = (By.XPATH, '//*[@id="t-btn-tab-mail"]')
+    AUTH_BTN_PHONE_NUMBER = (By.XPATH, '//*[@id="t-btn-tab-phone"]')
+    AUTH_BTN_LOGIN = (By.XPATH, '//*[@id="t-btn-tab-login"]')
+    AUTH_ERROR_LGN = (By.CSS_SELECTOR, '#form-error-message')
+    TEXT = (By.XPATH, '/html/body/div[1]/div/div[1]/div/section[1]/h2')
+    TEXT_AUTH_CODE = (By.XPATH, '//*[@id="card-title"]')
+    REMEMBER_ME = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[1]/div/form/div[3]/div/span[1]')
+    BTN_CAPTCHA = (By.XPATH, '//*[@id="captcha"]')
+    BTN_RESET = (By.XPATH, '//*[@id="reset"]')
+    NEW_PASSWORD = (By.XPATH, '//*[@id="password-new"]')
+    CONFIRM_PASSWORD = (By.XPATH, '//*[@id="password-confirm"]')
+    PASSWORD_MASK_1 = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div/div/form/div/div[1]/div/div[2]/svg')
+    PASSWORD_MASK_2 = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div/div/form/div/div[2]/div/div[2]/svg')
+    AUTH_REGISTRATION = (By.XPATH, '//*[@id="kc-register"]')
+
+    AUTH_CITY = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[1]/div/form/div[2]/div[1]/div/input')
+    AUTH_FIRST_NAME = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[1]/div/form/div[1]/div[1]/div/input')
+    AUTH_LAST_NAME = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[1]/div/form/div[1]/div[2]/div/input')
+    AUTH_EMAIL_OR_PHONE = (By.XPATH, '//*[@id="address"]')
+    AUTH_REGISTRATION_BTN = (By.XPATH, '/html/body/div[1]/main/section[2]/div/div[1]/div/form/button')
+    AUTH_REGISTRATION_PASS = (By.XPATH, '//*[@id="password"]')
+    AUTH_PASS_CONFIRM = (By.XPATH, '//*[@id="password-confirm"]')
